@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일본 문학의 세계</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Noto Serif KR"', 'serif'],
+                    },
+                    colors: {
+                        'parchment': {
+                            50: '#FFFDF5',
+                            100: '#FAF7ED',
+                            200: '#F5F0E0',
+                            300: '#EFE8D1',
+                            400: '#E8DFC0',
+                            500: '#DDD0A8',
+                        },
+                        'ink': {
+                            400: '#555555',
+                            500: '#333333',
+                            600: '#292929',
+                            700: '#1F1F1F',
+                            800: '#171717',
+                            900: '#0A0A0A',
+                        },
+                        'accent': {
+                            300: '#B3955C',
+                            400: '#A38447',
+                            500: '#8C6D34',
+                            600: '#725829',
+                        }
+                    },
+                    backgroundImage: {
+                        'paper-texture': "url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png')"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            }
+            .first-letter:first-letter {
+                float: left;
+                font-size: 3.5rem;
+                line-height: 0.8;
+                padding-right: 0.1em;
+                padding-top: 0.1em;
+                font-family: 'serif';
+                font-weight: 500;
+                color: #8C6D34;
+            }
+        }
+    </style>
+</head>
+<body class="font-serif bg-parchment-100 bg-paper-texture text-ink-600">
+    <div class="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <nav class="mb-12 border-b border-parchment-300 pb-4">
+            <div class="flex justify-between items-center">
+                <div class="text-accent-500 font-bold tracking-wider">세계 문학 컬렉션</div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-ink-400 hover:text-accent-500 transition">한국</a>
+                    <a href="uk.html" class="text-ink-400 hover:text-accent-500 transition">영국</a>
+                    <a href="jp.html" class="text-accent-500 font-medium hover:text-accent-600 transition">일본</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="text-center mb-16 relative pb-8">
+            <div class="absolute inset-0 flex justify-center items-center -z-10 opacity-5">
+                <svg class="w-64 h-64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 20.2044 12.3161 19.4413 12.8787 18.8787C13.4413 18.3161 14.2044 18 15 18H22V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-ink-700 mb-4 tracking-wide">일본 문학의 세계</h1>
+            <p class="text-xl text-ink-500 italic">고전부터 현대까지, 섬세하고 다채로운 일본 문학을 탐험합니다.</p>
+            <div class="flex justify-center mt-6">
+                <div class="w-24 h-1 bg-accent-400 rounded-full"></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    일본 문학의 역사
+                </h2>
+                
+                <div class="mb-12 bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <h3 class="text-xl font-semibold text-accent-500 mb-4">고대 문학 (나라 시대, 헤이안 시대)</h3>
+                    <p class="text-ink-600 first-letter">일본 최초의 역사서 '고사기', '일본서기'와 시가집 '만엽집'이 편찬되었습니다. 헤이안 시대에는 여성 작가들에 의해 '겐지모노가타리'와 같은 세계적인 걸작이 탄생했습니다.</p>
+                </div>
+
+                <div class="mb-12 bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <h3 class="text-xl font-semibold text-accent-500 mb-4">중세 문학 (가마쿠라 시대, 무로마치 시대)</h3>
+                    <p class="text-ink-600 first-letter">무사 계급의 등장과 함께 군담 문학이 발달했으며, '헤이케모노가타리' 등이 대표적입니다. 또한, '노'와 '교겐'과 같은 전통극이 발전했습니다.</p>
+                </div>
+
+                <div class="mb-12 bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <h3 class="text-xl font-semibold text-accent-500 mb-4">근세 문학 (에도 시대)</h3>
+                    <p class="text-ink-600 first-letter">조닌(町人) 문화가 발달하며 우키요조시, 하이쿠, 센류 등 다양한 서민 문학이 꽃피웠습니다. 마쓰오 바쇼, 이하라 사이카쿠 등이 이 시대를 대표하는 작가입니다.</p>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    주요 작가와 작품 (일본)
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 border-l-4 border-accent-500 hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <h3 class="text-xl font-semibold text-ink-700 mb-3">무라사키 시키부</h3>
+                        <p class="text-ink-600 mb-4">'겐지모노가타리'의 저자로 알려진 헤이안 시대의 여성 작가입니다.</p>
+                        <p class="text-ink-600"><span class="font-medium text-accent-500">대표작</span>: <span class="italic">겐지모노가타리</span></p>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 border-l-4 border-accent-500 hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <h3 class="text-xl font-semibold text-ink-700 mb-3">나쓰메 소세키</h3>
+                        <p class="text-ink-600 mb-4">메이지 시대를 대표하는 소설가로, 근대 일본인의 심리를 깊이 있게 묘사했습니다.</p>
+                        <p class="text-ink-600"><span class="font-medium text-accent-500">대표작</span>: <span class="italic">나는 고양이로소이다, 마음</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    일본 문학의 특징
+                </h2>
+                
+                <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <p class="text-ink-600">일본 문학 특징 (내용 추가 예정)</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    세계 속의 일본 문학
+                </h2>
+                
+                <div class="bg-gradient-to-r from-parchment-200 to-parchment-100 rounded-lg shadow-md p-8 border border-parchment-300 relative overflow-hidden">
+                    <p class="text-ink-600 mb-6 first-letter">일본 문학은 일찍부터 세계에 알려져 많은 영향을 주었습니다. (내용 추가 예정)</p>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    최신 일본 문학 소식
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 border border-parchment-200">
+                        <p class="text-ink-600">최신 일본 문학 소식 (내용 추가 예정)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-16 pt-6 border-t border-parchment-300 text-center text-ink-500">
+            <p class="mb-2">© 2024 일본 문학의 세계 | 이 페이지는 일본 문학에 대한 기본적인 소개를 위해 제작되었습니다.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-accent-400 hover:text-accent-500 transition">문의하기</a>
+                <span class="text-parchment-400">|</span>
+                <a href="#" class="text-accent-400 hover:text-accent-500 transition">사이트맵</a>
+                <span class="text-parchment-400">|</span>
+                <a href="#" class="text-accent-400 hover:text-accent-500 transition">출처</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
