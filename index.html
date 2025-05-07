@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국 문학의 세계</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Noto Serif KR"', 'serif'],
+                    },
+                    colors: {
+                        'parchment': {
+                            50: '#FFFDF5',
+                            100: '#FAF7ED',
+                            200: '#F5F0E0',
+                            300: '#EFE8D1',
+                            400: '#E8DFC0',
+                            500: '#DDD0A8',
+                        },
+                        'ink': {
+                            400: '#555555',
+                            500: '#333333',
+                            600: '#292929',
+                            700: '#1F1F1F',
+                            800: '#171717',
+                            900: '#0A0A0A',
+                        },
+                        'accent': {
+                            300: '#B3955C',
+                            400: '#A38447',
+                            500: '#8C6D34',
+                            600: '#725829',
+                        }
+                    },
+                    backgroundImage: {
+                        'paper-texture': "url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png')"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            }
+            .first-letter:first-letter {
+                float: left;
+                font-size: 3.5rem;
+                line-height: 0.8;
+                padding-right: 0.1em;
+                padding-top: 0.1em;
+                font-family: 'serif';
+                font-weight: 500;
+                color: #8C6D34;
+            }
+        }
+    </style>
+</head>
+<body class="font-serif bg-parchment-100 bg-paper-texture text-ink-600">
+    <div class="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <nav class="mb-12 border-b border-parchment-300 pb-4">
+            <div class="flex justify-between items-center">
+                <div class="text-accent-500 font-bold tracking-wider">세계 문학 컬렉션</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-accent-500 font-medium hover:text-accent-600 transition">홈</a>
+                    <a href="#" class="text-ink-500 hover:text-accent-500 transition">한국</a>
+                    <a href="#" class="text-ink-400 hover:text-accent-500 transition">중국</a>
+                    <a href="#" class="text-ink-400 hover:text-accent-500 transition">일본</a>
+                    <a href="#" class="text-ink-400 hover:text-accent-500 transition">서양</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="text-center mb-16 relative pb-8">
+            <div class="absolute inset-0 flex justify-center items-center -z-10 opacity-5">
+                <svg class="w-64 h-64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 20.2044 12.3161 19.4413 12.8787 18.8787C13.4413 18.3161 14.2044 18 15 18H22V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-ink-700 mb-4 tracking-wide">한국 문학의 세계</h1>
+            <p class="text-xl text-ink-500 italic">한국의 풍부한 문학 전통과 현대 작품들을 소개합니다</p>
+            <div class="flex justify-center mt-6">
+                <div class="w-24 h-1 bg-accent-400 rounded-full"></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    한국 문학의 역사
+                </h2>
+                
+                <div class="mb-12 bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <h3 class="text-xl font-semibold text-accent-500 mb-4">고전 문학</h3>
+                    <p class="text-ink-600 first-letter">한국의 고전 문학은 삼국시대부터 조선시대까지 이어졌으며, 향가, 시조, 가사, 고전소설 등 다양한 장르로 발전했습니다. 한문학과 국문학이 공존하며 발전해 왔으며, 특히 조선시대에는 시조와 같은 정형시와 판소리계 소설이 크게 발전했습니다.</p>
+                </div>
+
+                <div class="mb-12 bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <h3 class="text-xl font-semibold text-accent-500 mb-4">근대 문학</h3>
+                    <p class="text-ink-600 first-letter">개화기와 일제강점기를 거치며 한국 문학은 큰 변화를 겪었습니다. 서구 문학의 영향을 받아 새로운 형식과 내용의 문학이 등장했으며, 민족의식과 저항정신을 담은 작품들이 많이 창작되었습니다. 이 시기의 대표적인 작가로는 춘원 이광수, 김동인, 염상섭 등이 있습니다.</p>
+                </div>
+
+                <div class="mb-12 bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <h3 class="text-xl font-semibold text-accent-500 mb-4">현대 문학</h3>
+                    <p class="text-ink-600 first-letter">해방 이후 한국 문학은 전쟁의 상처와 분단, 산업화와 민주화 과정에서의 사회적 변화를 반영하며 발전해 왔습니다. 1990년대 이후에는 세계화 시대에 맞춰 다양한 주제와 실험적인 작품들이 등장하고 있으며, 최근에는 한국 문학의 세계화가 활발히 이루어지고 있습니다.</p>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    주요 작가와 작품
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 border-l-4 border-accent-500 hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 opacity-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-ink-700 mb-3"><a href="https://ko.wikipedia.org/wiki/%ED%99%A9%EC%88%9C%EC%9B%90" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">황순원</a> <span class="text-base text-ink-400 font-normal">(1915-2000)</span></h3>
+                        <p class="text-ink-600 mb-4">한국을 대표하는 단편소설가로 '소나기', '별' 등의 작품을 통해 순수한 인간성과 서정적인 문체로 사랑받았습니다.</p>
+                        <p class="text-ink-600"><span class="font-medium text-accent-500">대표작</span>: <span class="italic">소나기, 별, 학, 나무들 비탈에 서다</span></p>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 border-l-4 border-accent-500 hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 opacity-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-ink-700 mb-3"><a href="https://ko.wikipedia.org/wiki/%EB%B0%95%EA%B2%BD%EB%A6%AC" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">박경리</a> <span class="text-base text-ink-400 font-normal">(1926-2008)</span></h3>
+                        <p class="text-ink-600 mb-4">한국 문학의 대하소설 '토지'의 작가로, 한국 근현대사를 배경으로 인간의 삶과 역사를 웅장하게 그려냈습니다.</p>
+                        <p class="text-ink-600"><span class="font-medium text-accent-500">대표작</span>: <span class="italic">토지, 김약국의 딸들, 시장과 전장</span></p>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 border-l-4 border-accent-500 hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 opacity-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-ink-700 mb-3"><a href="https://ko.wikipedia.org/wiki/%EA%B9%80%EC%86%8C%EC%9B%94" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">김소월</a> <span class="text-base text-ink-400 font-normal">(1902-1934)</span></h3>
+                        <p class="text-ink-600 mb-4">한국 현대시의 선구자로, 민요적 정서와 한의 정서를 아름다운 시어로 표현했습니다.</p>
+                        <p class="text-ink-600"><span class="font-medium text-accent-500">대표작</span>: <span class="italic">진달래꽃, 초혼, 엄마야 누나야</span></p>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 border-l-4 border-accent-500 hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 opacity-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-ink-700 mb-3"><a href="https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B0%95_(%EC%9E%91%EA%B0%80)" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">한강</a> <span class="text-base text-ink-400 font-normal">(1970-)</span></h3>
+                        <p class="text-ink-600 mb-4">2016년 맨부커 인터내셔널상을 수상한 현대 작가로, 인간의 폭력성과 상처, 치유를 섬세하게 다룹니다.</p>
+                        <p class="text-ink-600"><span class="font-medium text-accent-500">대표작</span>: <span class="italic">채식주의자, 소년이 온다, 희랍어 시간</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    한국 문학의 특징
+                </h2>
+                
+                <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-8 border border-parchment-200">
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-parchment-400 text-ink-700 font-serif italic font-bold mr-4 flex-shrink-0 mt-1">1</div>
+                            <div>
+                                <h4 class="font-semibold text-accent-500 text-lg mb-1">한(恨)의 정서</h4>
+                                <p class="text-ink-600">오랜 역사적 수난과 함께 형성된 한국인 특유의 정서</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-parchment-400 text-ink-700 font-serif italic font-bold mr-4 flex-shrink-0 mt-1">2</div>
+                            <div>
+                                <h4 class="font-semibold text-accent-500 text-lg mb-1">자연과의 조화</h4>
+                                <p class="text-ink-600">자연을 사랑하고 자연과 하나가 되고자 하는 정신</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-parchment-400 text-ink-700 font-serif italic font-bold mr-4 flex-shrink-0 mt-1">3</div>
+                            <div>
+                                <h4 class="font-semibold text-accent-500 text-lg mb-1">공동체 의식</h4>
+                                <p class="text-ink-600">개인보다는 가족과 공동체를 중시하는 전통적 가치관</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-parchment-400 text-ink-700 font-serif italic font-bold mr-4 flex-shrink-0 mt-1">4</div>
+                            <div>
+                                <h4 class="font-semibold text-accent-500 text-lg mb-1">역사적 상처의 극복</h4>
+                                <p class="text-ink-600">일제강점기, 한국전쟁, 분단 등의 역사적 상처를 문학적으로 승화</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-parchment-400 text-ink-700 font-serif italic font-bold mr-4 flex-shrink-0 mt-1">5</div>
+                            <div>
+                                <h4 class="font-semibold text-accent-500 text-lg mb-1">실험적 시도</h4>
+                                <p class="text-ink-600">현대 문학에서 보이는 다양한 형식과 내용의 실험</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    세계 속의 한국 문학
+                </h2>
+                
+                <div class="bg-gradient-to-r from-parchment-200 to-parchment-100 rounded-lg shadow-md p-8 border border-parchment-300 relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 w-40 h-40 text-parchment-300 opacity-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <p class="text-ink-600 mb-6 first-letter">최근 들어 한국 문학은 세계적으로 주목받고 있습니다. 특히 한강의 '채식주의자'가 맨부커 인터내셔널상을 수상하고, 김영하, 황석영, 편혜영 등의 작품이 다양한 언어로 번역되면서 한국 문학의 세계화가 빠르게 진행되고 있습니다.</p>
+                    <p class="text-ink-600">한국 문학은 보편적 인간성을 탐구하면서도 한국만의 독특한 역사적, 문화적 배경을 바탕으로 한 특색 있는 작품들을 통해 세계 독자들에게 새로운 문학적 경험을 제공하고 있습니다.</p>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-ink-700 mb-10 tracking-wide flex items-center">
+                    <span class="w-8 h-1 bg-accent-400 mr-3"></span>
+                    최신 한국 문학 소식
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 border border-parchment-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-500 text-white rounded-lg p-3 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-.586-1.414l-4.5-4.5A2 2 0 0015.5 3H14m5 16v-2a2 2 0 00-2-2h-3a2 2 0 00-2 2v2M3 19h18"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-accent-500 text-sm mb-2">2024년 2월 29일</p>
+                                <h3 class="text-lg font-semibold text-ink-700 mb-2">
+                                    <a href="https://ltikorea.or.kr/kr/board/notice/boardView.do?bbsIdx=15171" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">
+                                        2024 한국문학번역상 번역신인상 공모
+                                    </a>
+                                </h3>
+                                <p class="text-ink-600">한국문학번역원에서 신진번역가 발굴을 위해 문학, 영화, 웹툰 부문 번역신인상을 공모합니다. (접수: 6/1~7/31)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 border border-parchment-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-500 text-white rounded-lg p-3 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-accent-500 text-sm mb-2">2024년 6월 26일 ~ 30일</p>
+                                <h3 class="text-lg font-semibold text-ink-700 mb-2">
+                                    <a href="https://sibf.or.kr/" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">
+                                        2024 서울국제도서전 개최
+                                    </a>
+                                </h3>
+                                <p class="text-ink-600">국내 최대 책 축제인 서울국제도서전이 코엑스에서 개최됩니다. 다양한 문학 행사와 국내외 작가들을 만날 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 border border-parchment-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-500 text-white rounded-lg p-3 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-accent-500 text-sm mb-2">2024년 5월 10일 (예시)</p>
+                                <h3 class="text-lg font-semibold text-ink-700 mb-2">
+                                    <a href="https://www.nl.go.kr/NL/contents/N30500000000.do" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">
+                                        국립중앙도서관, 온라인 자료 접근성 확대
+                                    </a>
+                                </h3>
+                                <p class="text-ink-600">국립중앙도서관은 디지털 전환 시대에 발맞춰 다양한 온라인 자료를 확충하고 이용 편의성을 높여 국민들의 정보 접근 기회를 확대하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-70 rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 border border-parchment-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-500 text-white rounded-lg p-3 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-accent-500 text-sm mb-2">2024년 (하반기 공고 예정)</p>
+                                <h3 class="text-lg font-semibold text-ink-700 mb-2">
+                                    <a href="https://www.arko.or.kr/content/5756" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">
+                                        2025년 청년예술가도약지원 사업 (문학 포함)
+                                    </a>
+                                </h3>
+                                <p class="text-ink-600">한국문화예술위원회에서 청년 예술가들의 창작 및 발표 활동을 지원하는 사업입니다. (2025년 사업은 2024년 하반기 공고 예정)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-16 pt-6 border-t border-parchment-300 text-center text-ink-500">
+            <p class="mb-2">© 2024 한국 문학의 세계 | 이 페이지는 한국 문학에 대한 기본적인 소개를 위해 제작되었습니다.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-accent-400 hover:text-accent-500 transition">문의하기</a>
+                <span class="text-parchment-400">|</span>
+                <a href="#" class="text-accent-400 hover:text-accent-500 transition">사이트맵</a>
+                <span class="text-parchment-400">|</span>
+                <a href="#" class="text-accent-400 hover:text-accent-500 transition">출처</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
